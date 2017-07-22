@@ -37,6 +37,12 @@ framework:
 twig:
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
+# Migrations configuration
+doctrine_migrations:
+    dir_name: "%kernel.root_dir%/DoctrineMigrations"
+    namespace: Application\Migrations
+    table_name: migration_versions
+    name: Application Migrations
 
 # Doctrine Configuration
 doctrine:
